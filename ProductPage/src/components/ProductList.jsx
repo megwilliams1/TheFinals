@@ -27,14 +27,16 @@ function GetProductList() {
       }, []);
   return (
     <>
+    
     <div> 
-        <Header />
+        {/* <Header /> */}
      <h1>Product Items</h1>   
     </div>
       <div className="product-container">
       {products.map((item) => {
         return (
-            <Card key={item.id} className="cards" onClick={() =>{navigate("details/" + item.id)}}>
+            <Card key={item.id} className="cards" onClick={() =>{navigate("details/" + item.id)}}
+            >
             <CardActionArea>
               <CardMedia className="product-image"
                 component="img"
@@ -51,8 +53,8 @@ function GetProductList() {
               </CardContent>
             <CardContent>
                 <Typography className="price">
-                    Price: $
-                    {item.price}
+                    <b>Price: $
+                    {item.price}</b>
                 </Typography>
             </CardContent>
             <CardContent>
@@ -69,7 +71,7 @@ function GetProductList() {
       })}
     </div>
     <>
-    <Footer />
+    {/* <Footer /> */}
     </>
     </>
   );

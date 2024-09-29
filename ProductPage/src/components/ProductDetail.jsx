@@ -17,11 +17,10 @@ const ProductDetails = () => {
   return (
     <div>
       <h1>{productDetails.title}</h1>
-      { <img src={productDetails.image} alt="product-image" width={200} />}
-      <h2>
+      { <img src={productDetails.image} alt="product-image" width={200} className="product-image"/>}
+      <h2> 
         <p>{productDetails.description}</p>
       </h2>
-      
     </div>
   );
 };

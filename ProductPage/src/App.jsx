@@ -14,13 +14,15 @@ function App() {
 
   return(
     <BrowserRouter>
+    <Header />
     <Routes>
       <Route element={<GetProductList />} path="/" />
       <Route element={<ProductDetails />} path="details/:id" />
       {/* <route element={<Header />} path="header" /> */}
       </Routes>
+      <Footer />
       </BrowserRouter>
-  
+    
   
   );
 }
