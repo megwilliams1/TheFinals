@@ -8,7 +8,10 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import CardActionArea from '@mui/material/CardActionArea';
 import CardActions from '@mui/material/CardActions';
-import "../styles.css"
+import '../styles.css'
+import Header from "../components/header";
+import Footer from "../components/footer";
+
 
 
 function GetProductList() {
@@ -25,6 +28,7 @@ function GetProductList() {
   return (
     <>
     <div> 
+        <Header />
      <h1>Product Items</h1>   
     </div>
       <div className="product-container">
@@ -39,7 +43,7 @@ function GetProductList() {
               />
               <CardContent>
                 <Typography className="title">
-                  {item.title}
+                  <b>{item.title}</b>
                 </Typography>
                 <Typography className="description">
                   {item.description}
@@ -64,6 +68,9 @@ function GetProductList() {
         
       })}
     </div>
+    <>
+    <Footer />
+    </>
     </>
   );
 }

@@ -5,7 +5,7 @@ import GetProductList from "./components/ProductList";
 // import ProductCard from "./components/ProductCard"
 import ProductDetails from "./components/ProductDetail";
 import "./App.css";
-import "./styles.css";
+// import "./styles.css";
 
 
 
@@ -17,23 +17,14 @@ function App() {
     <Routes>
       <Route element={<GetProductList />} path="/" />
       <Route element={<ProductDetails />} path="details/:id" />
+      {/* <route element={<Header />} path="header" /> */}
       </Routes>
       </BrowserRouter>
+  
   
   );
 }
 
-
-// function App() {
-  
-//   return(
-//     <>
-//         <Header />
-//         <ProductCard />
-//         <Footer />
-//     </>
-//   );
-// }
 
 export default App
 

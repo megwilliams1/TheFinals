@@ -1,9 +1,11 @@
 #root {
-  max-width: 1280px;
+  max-width: auto;
   margin: 0 auto;
-  
   text-align: center;
   background-color: #9a8c98;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: larger;
+  color: #22223b;
   
 }
 
@@ -37,13 +39,14 @@
 
 .card {
   padding: 2em;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .read-the-docs {
   color: #888;
 }
 
-.App {
+/* .App {
   background-color: #9a8c98;
   min-height: fit-content;
-}
+} */

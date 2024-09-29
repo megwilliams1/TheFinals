@@ -1,3 +1,4 @@
+import "../Header.css";
 
 function Header(){
 
@@ -5,7 +6,7 @@ function Header(){
         <header>
             <h1>Megans Boutique</h1>
             <nav>
-                <ul>
+                <ul className="links">
                     <li><a href=".">Home</a></li>
                     <li><a href=".">About</a></li>
                     <li><a href=".">Products</a></li>

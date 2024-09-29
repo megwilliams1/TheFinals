@@ -1,0 +1,12 @@
+header {
+    background-color: #c9ada7;
+    /* display:inline-flex; */
+    justify-content:space-between
+
+}
+
+.links {
+    display: flex;
+    justify-content: space-evenly;
+
+}
