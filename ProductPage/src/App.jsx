@@ -1,27 +1,25 @@
-// import Header from "./components/Header";
-
+import Header from "./components/Header";
 import Footer from "./components/Footer";
-import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-import GetProductsList from "./components/ProductList";
+import {BrowserRouter, Route, Routes} from 'react-router-dom';
+import GetProductList from "./components/ProductList";
+// import ProductCard from "./components/ProductCard"
+import ProductDetails from "./components/ProductDetail";
+import "./App.css";
+import "./styles.css";
+
 
 
 
 function App() {
 
   return(
-    <GetProductsList/>
-
-    // <BrowserRouter>
-    // <Router>
-    //   <Navbar />
-    //   <Routes>
-    //     <Route path="/" element= {<Home></Home>} />
-    //     <Route path="/ products" element= {<Products/>} />
-    //     <Route path="/ products/:id "element= {<productDetails/>} />
-    //     <Route path="/about" element= {<About />} />
-    //   </Routes>
-    // </Router>
-    // </BrowserRouter>
+    <BrowserRouter>
+    <Routes>
+      <Route element={<GetProductList />} path="/" />
+      <Route element={<ProductDetails />} path="details/:id" />
+      </Routes>
+      </BrowserRouter>
+  
   );
 }
 
