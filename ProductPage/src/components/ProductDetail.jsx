@@ -4,8 +4,8 @@ import { getProductDetail } from "../utils/api";
 import "../styles.css";
 
 const ProductDetails = () => {
-    const [productDetails, setProductDetails] = useState({});
-     const { id } = useParams();
+  const [productDetails, setProductDetails] = useState({});
+  const { id } = useParams();
 
   useEffect(() => {
     getProductDetail(id).then((data) => {
@@ -17,8 +17,15 @@ const ProductDetails = () => {
   return (
     <div>
       <h1>{productDetails.title}</h1>
-      { <img src={productDetails.image} alt="product-image" width={200} className="product-image"/>}
-      <h2> 
+      {
+        <img
+          src={productDetails.image}
+          alt="product-image"
+          width={200}
+          className="product-image"
+        />
+      }
+      <h2>
         <p>{productDetails.description}</p>
       </h2>
     </div>

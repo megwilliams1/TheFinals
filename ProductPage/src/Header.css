@@ -1,25 +1,24 @@
 header {
-    background-color: #c9ada7;
-    /* display:inline-flex; */
-    justify-content:space-between;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-style: oblique;
-    
-
+  background-color: #c9ada7;
+  /* display:inline-flex; */
+  justify-content: space-between;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-style: oblique;
+  text-align: center;
+  padding: 5px;
 }
 
 .links {
-    display: flex;
-    justify-content: space-evenly;
-
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .back-btn {
-    background-color: #b38d97;
-    color:#424b54;
-    padding: 5px 10px;
-    border: #424b54;
-    border-radius: 5px;
-    cursor: grab;
-
+  background-color: #b38d97;
+  color: #424b54;
+  padding: 5px 10px;
+  border: #424b54;
+  border-radius: 5px;
+  cursor: grab;
 }
